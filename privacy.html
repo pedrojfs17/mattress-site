@@ -18,7 +18,7 @@
       <a class="brand" href="./"><img src="icon.png" alt="" />Money Manager</a>
 
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated 28 September 2026</p>
+      <p class="updated">Last updated 11 October 2026</p>
 
       <h2>The short version</h2>
       <p>
@@ -30,17 +30,22 @@
 
       <h2>What stays on your phone</h2>
       <p>
-        Accounts, records, categories, rules, investments and settings are
-        stored in a local database on the device. Passphrases, bank keys and AI
-        keys are kept in the phone's secure storage. Uninstalling the app
-        deletes all of it.
+        Accounts, records, categories, rules, recurring payments, debts,
+        investments and settings are stored in a local database on the device.
+        Passphrases, bank keys, broker sessions and keys, AI keys and the
+        ChatGPT sign-in are kept in the phone's secure storage, or encrypted on
+        the phone with a key kept there, and never go into a backup.
+        Uninstalling the app deletes its database. On iPhone, items in secure
+        storage can outlive an uninstall, so disconnect each service in the app
+        first if you want its keys removed.
       </p>
 
       <h2>Optional features that talk to other services</h2>
       <p>
         These are off until you turn them on, and each one uses your own account
-        with that service. Data goes straight from your phone to the service,
-        never through the developer.
+        with that service. The one exception is investment prices, which are
+        fetched as soon as a holding has a symbol and need no account. Data goes
+        straight from your phone to the service, never through the developer.
       </p>
       <ul>
         <li>
@@ -54,19 +59,49 @@
           from Enable Banking and stores them on the phone.
         </li>
         <li>
+          <strong>Broker connections.</strong> Trade Republic, Trading 212 and
+          Robinhood connect directly from the phone. Your Trade Republic phone
+          number and PIN, your Trading 212 API key, and your Robinhood email and
+          password are sent only to that broker. The PIN and password are never
+          saved. The Trading 212 key and the broker sessions stay on the phone,
+          in secure storage or encrypted with a key kept there. The app receives
+          your cash movements, trades and positions and stores them on the
+          phone.
+        </li>
+        <li>
+          <strong>ChatGPT sign-in.</strong> You sign in on OpenAI's own page.
+          The app keeps the sign-in and your account email in the phone's secure
+          storage, and uses your ChatGPT plan for AI requests instead of an API
+          key.
+        </li>
+        <li>
           <strong>AI categorisation.</strong> Sends the merchant name, whether
           the money came in or went out, and your category names to the AI
-          provider you choose (Anthropic, OpenAI or Google), using your own API
-          key. Amounts, dates, accounts and notes are never sent.
+          provider you choose: your ChatGPT plan, or Anthropic, OpenAI or Google
+          with your own API key. Amounts, dates, accounts and notes are never
+          sent.
+        </li>
+        <li>
+          <strong>Assistant.</strong> Runs on your ChatGPT plan. When you use
+          it, your questions and what it needs from your records to answer,
+          including merchants, amounts, dates, categories, accounts and notes,
+          are sent to OpenAI. A notice says so before your first question. The
+          app asks OpenAI not to store the chat, and the chat is not saved on
+          the phone.
         </li>
         <li>
           <strong>Investment prices.</strong> Sends the ticker symbols of your
-          investments to Yahoo Finance to fetch prices. Nothing else is sent.
+          investments to Yahoo Finance to fetch prices, with the dates of the
+          price history needed, which start at your first trade. Searching for a
+          symbol or syncing a broker portfolio sends the text or ISIN being
+          looked up. Nothing else is sent.
         </li>
         <li>
-          <strong>Payment capture (Android).</strong> Reads notifications from
-          the payment app you pick, on the phone, to create records. The
-          notifications are not sent anywhere.
+          <strong>Payment capture.</strong> On Android, reads notifications from
+          the payment app you pick. On iPhone, from iOS 27, a Shortcuts
+          automation you set up passes your bank app's notification to the app.
+          Both happen on the phone, to create records, and the notifications are
+          not sent anywhere.
         </li>
         <li>
           <strong>Your own service.</strong> If you run your own Money Manager
