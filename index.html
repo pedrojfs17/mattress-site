@@ -152,9 +152,9 @@
         <path d="M22 4h-4" />
         <circle cx="4" cy="20" r="2" />
       </symbol>
-      <symbol id="i-zap" viewBox="0 0 24 24">
+      <symbol id="i-droplet" viewBox="0 0 24 24">
         <path
-          d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"
+          d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"
         />
       </symbol>
       <symbol id="i-tv" viewBox="0 0 24 24">
@@ -1781,21 +1781,76 @@
 
       <section class="wrap chapter flip bills">
         <div class="copy reveal">
-          <h2 class="title">Bills you can see coming.</h2>
+          <h2 class="title">Know what leaves every month.</h2>
           <p>
-            Money Manager spots the payments that repeat and lists the next
-            ones, with a reminder on the day or a few days before. No setup: it
-            learns from the records you already have.
+            Add your subscriptions and bills once, with the amount, the account
+            and how often they come: every week, every two months, once a year.
+            Charges are linked to them as they arrive, and one monthly total
+            shows what goes out.
           </p>
+          <ul class="points">
+            <li>
+              <span class="glyph" style="--c: var(--ring-cyan)"
+                ><svg class="i"><use href="#i-chart-pie" /></svg
+              ></span>
+              <span
+                ><b>Fixed or not, at a glance</b>Linked charges are your fixed
+                costs. Cash flow shows them next to everything else, month by
+                month.</span
+              >
+            </li>
+            <li>
+              <span class="glyph" style="--c: var(--ring-amber)"
+                ><svg class="i"><use href="#i-bell" /></svg
+              ></span>
+              <span
+                ><b>Nothing slips by</b>A new price or a charge that did not
+                arrive is flagged. Reminders come on the day or a few days
+                before.</span
+              >
+            </li>
+            <li>
+              <span class="glyph" style="--c: var(--ring-violet)"
+                ><svg class="i"><use href="#i-sparkles" /></svg
+              ></span>
+              <span
+                ><b>Suggested from your records</b>Payees that repeat show up on
+                their own. One tap adds them.</span
+              >
+            </li>
+          </ul>
         </div>
 
         <div class="stage reveal" style="--stage: var(--tint-coral)">
           <div
             class="surface"
             role="img"
-            aria-label="Upcoming bills: rent, electricity, Netflix and phone, with a reminder one day before"
+            aria-label="Recurring payments: 813,18 euros every month, Netflix flagged for a new price, rent, water and phone due next, and Spotify suggested"
           >
-            <div class="st" aria-hidden="true">Upcoming bills</div>
+            <div class="pair-head" aria-hidden="true">
+              <div class="cap">Every month</div>
+              <div class="big out">−813,18 €</div>
+              <div class="meta">
+                4 active. Ones that are not monthly count as their monthly
+                share.
+              </div>
+            </div>
+            <div class="st" aria-hidden="true">Needs a look</div>
+            <div aria-hidden="true">
+              <div class="row">
+                <span class="cat" style="--c: #ef4444"
+                  ><svg class="i"><use href="#i-tv" /></svg
+                ></span>
+                <div class="grow">
+                  <div class="name">Netflix</div>
+                  <div class="meta">
+                    Last charge 15,99 €, you expect 13,99 €
+                  </div>
+                </div>
+                <span class="btn ghost">Use 15,99 €</span>
+              </div>
+            </div>
+            <div class="st" aria-hidden="true">Due next</div>
             <div aria-hidden="true">
               <div class="row">
                 <span class="cat" style="--c: #6366f1"
@@ -1803,39 +1858,44 @@
                 ></span>
                 <div class="grow">
                   <div class="name">Rent</div>
-                  <div class="meta">Thu, 1 Oct · in 3 days</div>
+                  <div class="meta">In 3 days, monthly on the 1st</div>
                 </div>
                 <span class="amt out">−750,00 €</span>
               </div>
               <div class="row">
-                <span class="cat" style="--c: #f59e0b"
-                  ><svg class="i"><use href="#i-zap" /></svg
-                ></span>
-                <div class="grow">
-                  <div class="name">Electricity</div>
-                  <div class="meta">Mon, 5 Oct</div>
-                </div>
-                <span class="amt out">−54,20 €</span>
-              </div>
-              <div class="row">
-                <span class="cat" style="--c: #ef4444"
-                  ><svg class="i"><use href="#i-tv" /></svg
-                ></span>
-                <div class="grow">
-                  <div class="name">Netflix</div>
-                  <div class="meta">Mon, 12 Oct</div>
-                </div>
-                <span class="amt out">−13,99 €</span>
-              </div>
-              <div class="row">
                 <span class="cat" style="--c: #06b6d4"
+                  ><svg class="i"><use href="#i-droplet" /></svg
+                ></span>
+                <div class="grow">
+                  <div class="name">Water</div>
+                  <div class="meta">In 9 days, every 2 months on the 7th</div>
+                </div>
+                <span class="amt out">−38,40 €</span>
+              </div>
+              <div class="row">
+                <span class="cat" style="--c: #3b82f6"
                   ><svg class="i"><use href="#i-smartphone" /></svg
                 ></span>
                 <div class="grow">
                   <div class="name">Phone</div>
-                  <div class="meta">Sun, 18 Oct</div>
+                  <div class="meta">In 18 days, monthly on the 18th</div>
                 </div>
                 <span class="amt out">−29,99 €</span>
+              </div>
+            </div>
+            <div class="st" aria-hidden="true">Looks recurring</div>
+            <div aria-hidden="true">
+              <div class="row">
+                <span class="cat" style="--c: #22c55e"
+                  ><svg class="i"><use href="#i-sparkles" /></svg
+                ></span>
+                <div class="grow">
+                  <div class="name">Spotify</div>
+                  <div class="meta">Looks monthly, from Main account</div>
+                </div>
+                <span class="btn"
+                  ><svg class="i"><use href="#i-plus" /></svg>Add it</span
+                >
               </div>
             </div>
             <div
@@ -1844,7 +1904,8 @@
               style="padding-top: 12px; font-size: 13px"
             >
               <span style="display: inline-flex; align-items: center; gap: 6px"
-                ><svg class="i"><use href="#i-bell" /></svg>Remind me</span
+                ><svg class="i"><use href="#i-bell" /></svg>Remind me before a
+                payment</span
               >
             </div>
             <div class="seg" aria-hidden="true">
