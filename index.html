@@ -248,6 +248,10 @@
         <rect width="7" height="7" x="14" y="14" rx="1" />
         <rect width="7" height="7" x="3" y="14" rx="1" />
       </symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24">
+        <path d="m5 12 7-7 7 7" />
+        <path d="M12 19V5" />
+      </symbol>
       <symbol id="i-arrow-down" viewBox="0 0 24 24">
         <path d="M12 5v14" />
         <path d="m19 12-7 7-7-7" />
@@ -650,9 +654,10 @@
                 storage
               </h3>
               <p>
-                Your bank key, AI key and backup passphrase live in the
-                phone&#8217;s Keychain or Keystore, on that phone only, and
-                never go into a backup.
+                Your bank key, broker keys and sessions, AI key, ChatGPT sign-in
+                and backup passphrase live in the phone&#8217;s Keychain or
+                Keystore, or are encrypted with a key kept there. They stay on
+                that phone and never go into a backup.
               </p>
             </li>
             <li class="reveal">
@@ -661,9 +666,10 @@
                 needed leaves
               </h3>
               <p>
-                AI suggestions see a merchant name and your category names.
-                Price lookups send a ticker. Drive access covers only the
-                app&#8217;s own files.
+                Categorising sends a merchant name and your category names. The
+                assistant sends what it needs to answer, amounts included, and
+                tells you first. Price lookups send a ticker. Drive access
+                covers only the app&#8217;s own files.
               </p>
             </li>
             <li class="reveal" style="--d: 100ms">
@@ -1343,9 +1349,10 @@
         <div class="copy reveal">
           <h2 class="title">Categories that sort themselves.</h2>
           <p>
-            Your rules run first. For whatever is left, the AI model you choose
-            suggests a category: Anthropic, OpenAI or Google, with your own key.
-            The request goes straight from your phone to the provider.
+            Your rules run first. For whatever is left, the AI you choose
+            suggests a category: your ChatGPT Plus or Pro plan, with no key to
+            set up, or Anthropic, OpenAI or Google with your own key. The
+            request goes straight from your phone to the provider.
           </p>
           <ul class="points">
             <li>
@@ -1374,8 +1381,9 @@
                 ><svg class="i"><use href="#i-key-round" /></svg
               ></span>
               <span
-                ><b>Your key stays on the phone</b>The API key lives in the
-                phone&#8217;s secure storage and never goes into a backup.</span
+                ><b>Your key stays on the phone</b>The API key or ChatGPT
+                sign-in lives in the phone&#8217;s secure storage and never goes
+                into a backup.</span
               >
             </li>
           </ul>
@@ -1454,6 +1462,110 @@
             <div class="two">
               <span class="btn">Apply</span>
               <span class="btn ghost">Dismiss</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap chapter assistant">
+        <div class="copy reveal">
+          <h2 class="title">Ask about your money.</h2>
+          <p>
+            The assistant answers how to do something in the app, and questions
+            about your own records, like how much went on groceries last month.
+            It reads the records on your phone and runs on your ChatGPT plan.
+          </p>
+          <ul class="points">
+            <li>
+              <span class="glyph" style="--c: var(--ring-green)"
+                ><svg class="i"><use href="#i-check" /></svg
+              ></span>
+              <span
+                ><b>It proposes, you apply</b>It can offer to move records to
+                another category, rename a merchant, add labels or make a rule.
+                Nothing changes until you tap Apply, and Undo takes it
+                back.</span
+              >
+            </li>
+            <li>
+              <span class="glyph" style="--c: var(--ring-cyan)"
+                ><svg class="i"><use href="#i-eye" /></svg
+              ></span>
+              <span
+                ><b>Told before you start</b>Unlike categorising, it sends
+                OpenAI what it needs to answer, amounts, dates and notes
+                included. A notice says so before your first question.</span
+              >
+            </li>
+            <li>
+              <span class="glyph" style="--c: var(--ring-violet)"
+                ><svg class="i"><use href="#i-eye-off" /></svg
+              ></span>
+              <span
+                ><b>Nothing kept</b>The app asks OpenAI not to store the chat,
+                and it is gone from the phone when you close the screen.</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="stage reveal" style="--stage: var(--tint-green)">
+          <div
+            class="phone"
+            role="img"
+            aria-label="The assistant answering a question about grocery spending and proposing to move 6 Continente records to Groceries, with Apply and Dismiss"
+          >
+            <div class="screen" aria-hidden="true">
+              <div class="status"><span>9:41</span><i></i></div>
+              <div class="appbar">
+                <svg class="i"><use href="#i-chevron-left" /></svg>Assistant
+              </div>
+              <div class="body chat">
+                <div class="me">
+                  How much did I spend on groceries last month?
+                </div>
+                <div class="ai">
+                  <b class="num">212,40 €</b> in September, across 14 records.
+                  Six Continente records are still in Shopping. Should they be
+                  in Groceries?
+                </div>
+                <div class="surface pad proposal">
+                  <div class="st">Move 6 records to Groceries</div>
+                  <div class="meta">Continente, now in Shopping</div>
+                  <div class="row">
+                    <span class="cat" style="--c: #ec4899"
+                      ><svg class="i"><use href="#i-shopping-bag" /></svg
+                    ></span>
+                    <div class="grow">
+                      <div class="name">Continente</div>
+                      <div class="meta">Sat, 26 Sept</div>
+                    </div>
+                    <span class="amt out">−38,72 €</span>
+                  </div>
+                  <div class="row">
+                    <span class="cat" style="--c: #ec4899"
+                      ><svg class="i"><use href="#i-shopping-bag" /></svg
+                    ></span>
+                    <div class="grow">
+                      <div class="name">Continente</div>
+                      <div class="meta">Sat, 19 Sept</div>
+                    </div>
+                    <span class="amt out">−24,15 €</span>
+                  </div>
+                  <div class="meta">And 4 more</div>
+                  <div class="two">
+                    <span class="btn">Apply</span>
+                    <span class="btn ghost">Dismiss</span>
+                  </div>
+                </div>
+                <div style="flex: 1"></div>
+                <div class="composer">
+                  <span class="grow">Ask about your money or the app</span
+                  ><span class="btn"
+                    ><svg class="i"><use href="#i-arrow-up" /></svg
+                  ></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
