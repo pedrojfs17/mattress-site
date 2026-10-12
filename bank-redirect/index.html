@@ -19,8 +19,8 @@
       const suffix = query ? `?${query}` : "";
       const android = /Android/i.test(navigator.userAgent);
       const target = android
-        ? `intent://bank/callback${suffix}#Intent;scheme=moneymanager;package=com.pedroseixas.moneymanager;end`
-        : `moneymanager://bank/callback${suffix}`;
+        ? `intent://bank/callback${suffix}#Intent;scheme=mattress;package=com.pedroseixas.mattress;end`
+        : `mattress://bank/callback${suffix}`;
       const open = () => location.assign(target);
       document.getElementById("open").addEventListener("click", open);
       open();
