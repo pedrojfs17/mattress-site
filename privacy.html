@@ -18,7 +18,7 @@
       <a class="brand" href="./"><img src="icon.png" alt="" />Money Manager</a>
 
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated 11 October 2026</p>
+      <p class="updated">Last updated 12 October 2026</p>
 
       <h2>The short version</h2>
       <p>
@@ -43,15 +43,21 @@
       <h2>Optional features that talk to other services</h2>
       <p>
         These are off until you turn them on, and each one uses your own account
-        with that service. The one exception is investment prices, which are
-        fetched as soon as a holding has a symbol and need no account. Data goes
-        straight from your phone to the service, never through the developer.
+        with that service. Two need no account: backup to a folder, and
+        investment prices, which are fetched as soon as a holding has a symbol.
+        Data goes straight from your phone to the service, never through the
+        developer.
       </p>
       <ul>
         <li>
           <strong>Google Drive backup.</strong> Backups are encrypted on the
           phone with AES-256-GCM using your passphrase before they are uploaded,
           so Google cannot read them. See the Google section below.
+        </li>
+        <li>
+          <strong>Backup to a folder.</strong> Backups are encrypted on the
+          phone with AES-256-GCM using your passphrase before they are written
+          to a folder you pick. See the folder section below.
         </li>
         <li>
           <strong>Bank sync.</strong> Uses Enable Banking with credentials you
@@ -136,6 +142,26 @@
         <a href="https://myaccount.google.com/permissions"
           >myaccount.google.com/permissions</a
         >. Backups already in your Drive stay there until you delete them.
+      </p>
+
+      <h2>Backup to a folder</h2>
+      <p>
+        You pick the folder in the phone's own folder picker, and the app gets
+        access to that one folder only. On Android this is a folder grant the
+        system keeps; on iPhone it is a bookmark to the folder. The app can read
+        the folder's file list and write, read and delete its own backup files
+        there. It never deletes files it did not write.
+      </p>
+      <p>
+        Whatever syncs that folder, such as iCloud Drive, Nextcloud, Syncthing
+        or a cloud drive app, is your own service, under its own terms. Your
+        data never goes through the developer.
+      </p>
+      <p>
+        The folder backup passphrase is kept in the phone's secure storage and
+        never goes into a backup. Turning folder backup off forgets the
+        passphrase and the folder. Backups already in the folder stay there
+        until you delete them.
       </p>
 
       <h2>Children</h2>
