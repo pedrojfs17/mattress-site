@@ -308,6 +308,23 @@
         <path d="M8 12h13" />
         <path d="M8 19h13" />
       </symbol>
+      <symbol id="i-languages" viewBox="0 0 24 24">
+        <path d="m5 8 6 6" />
+        <path d="m4 14 6-6 2-3" />
+        <path d="M2 5h12" />
+        <path d="M7 2h1" />
+        <path d="m22 22-5-10-5 10" />
+        <path d="M14 18h6" />
+      </symbol>
+      <symbol id="i-folder-sync" viewBox="0 0 24 24">
+        <path
+          d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v.5"
+        />
+        <path d="M12 10v4h4" />
+        <path d="m12 14 1.535-1.605a5 5 0 0 1 8 1.5" />
+        <path d="M22 22v-4h-4" />
+        <path d="m22 18-1.535 1.605a5 5 0 0 1-8-1.5" />
+      </symbol>
       <symbol id="i-globe" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10" />
         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
@@ -642,9 +659,10 @@
                 <svg class="i"><use href="#i-lock" /></svg>Encrypted backups
               </h3>
               <p>
-                Daily backups to your own Google Drive, sealed on the phone with
-                AES-256-GCM before upload. The key comes from a passphrase only
-                you know, so Google cannot read them.
+                Daily backups to your own Google Drive or a folder you pick,
+                sealed on the phone with AES-256-GCM before they leave. The key
+                comes from a passphrase only you know, so nobody else can read
+                them.
               </p>
             </li>
             <li class="reveal" style="--d: 100ms">
@@ -654,7 +672,7 @@
               </h3>
               <p>
                 Your bank key, broker keys and sessions, AI key, ChatGPT sign-in
-                and backup passphrase live in the phone&#8217;s Keychain or
+                and backup passphrases live in the phone&#8217;s Keychain or
                 Keystore, or are encrypted with a key kept there. They stay on
                 that phone and never go into a backup.
               </p>
@@ -668,7 +686,8 @@
                 Categorising sends a merchant name and your category names. The
                 assistant sends what it needs to answer, amounts included, and
                 tells you first. Price lookups send a ticker. Drive access
-                covers only the app&#8217;s own files.
+                covers only the app&#8217;s own files, and folder backup can
+                open only the folder you picked.
               </p>
             </li>
             <li class="reveal" style="--d: 100ms">
@@ -2095,6 +2114,14 @@
             <svg class="i"><use href="#i-moon" /></svg><b>Light and dark</b
             ><span>Follows your phone, or pick one yourself.</span>
           </li>
+          <li class="reveal" style="--c: #ef4444">
+            <svg class="i"><use href="#i-languages" /></svg
+            ><b>English and Portuguese</b
+            ><span
+              >The app speaks European Portuguese too. It follows your phone, or
+              pick a language in Settings.</span
+            >
+          </li>
           <li class="reveal" style="--c: #14b8a6">
             <svg class="i"><use href="#i-arrow-up-down" /></svg
             ><b>Accounts in your order</b
@@ -2111,8 +2138,25 @@
             <svg class="i"><use href="#i-cloud" /></svg
             ><b>New phone, same money</b
             ><span
-              >Restore a backup from a file or from Drive on the first
+              >Restore a backup from a file, a folder or Drive on the first
               screen.</span
+            >
+          </li>
+          <li class="reveal" style="--c: #3b82f6">
+            <svg class="i"><use href="#i-folder-sync" /></svg
+            ><b>Back up to a folder</b
+            ><span
+              >iCloud Drive or any Files folder on iPhone. Any folder on
+              Android, including one Syncthing, Nextcloud or a cloud drive app
+              keeps in sync.</span
+            >
+          </li>
+          <li class="reveal" style="--c: #ec4899">
+            <svg class="i"><use href="#i-bell" /></svg><b>A nudge to back up</b
+            ><span
+              >After your first account, the app asks to turn on automatic
+              backups. A calm card shows when they are off, failing or more than
+              a week behind.</span
             >
           </li>
           <li class="reveal" style="--c: #f59e0b">
