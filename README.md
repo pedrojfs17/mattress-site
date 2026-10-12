@@ -1,6 +1,6 @@
-# Money Manager site
+# Mattress site
 
-The public pages for the Money Manager app, served by GitHub Pages at
+The public pages for the Mattress app, served by GitHub Pages at
 https://pedrojfs17.github.io/money-manager-app/.
 
 - `index.html`: the landing page.
