@@ -1,7 +1,8 @@
 # Mattress site
 
-The public pages for the Mattress app, served by GitHub Pages at
-https://pedrojfs17.github.io/mattress/.
+The public pages for the Mattress app, served by GitHub Pages at https://getmattress.app/ (set in `CNAME`).
+The old `pedrojfs17.github.io/money-manager-app/` URLs forward there. This repository is renamed to
+`mattress-site` on move day.
 
 - `index.html`: the landing page.
 - `privacy.html`: the privacy policy, also linked from the Google OAuth consent screen.
@@ -17,4 +18,4 @@ is useless without the private key that stays on the person's phone.
 
 Register this URL in your Enable Banking application:
 
-https://pedrojfs17.github.io/mattress/bank-redirect/
+https://getmattress.app/bank-redirect/
