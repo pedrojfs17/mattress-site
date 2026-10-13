@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Open Money Manager</title>
+    <title>Open Mattress</title>
   </head>
   <body>
-    <h1>Return to Money Manager</h1>
+    <h1>Return to Mattress</h1>
     <p>Open the app to finish connecting your bank.</p>
-    <button type="button" id="open">Open Money Manager</button>
+    <button type="button" id="open">Open Mattress</button>
     <script>
       const params = new URLSearchParams(location.search);
       const allowed = new URLSearchParams();
@@ -19,8 +19,8 @@
       const suffix = query ? `?${query}` : "";
       const android = /Android/i.test(navigator.userAgent);
       const target = android
-        ? `intent://bank/callback${suffix}#Intent;scheme=moneymanager;package=com.pedroseixas.moneymanager;end`
-        : `moneymanager://bank/callback${suffix}`;
+        ? `intent://bank/callback${suffix}#Intent;scheme=mattress;package=app.getmattress;end`
+        : `mattress://bank/callback${suffix}`;
       const open = () => location.assign(target);
       document.getElementById("open").addEventListener("click", open);
       open();

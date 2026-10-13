@@ -15,16 +15,14 @@
   --transfer-soft: oklch(0.94 0.008 250);
   --blue: oklch(0.62 0.17 250);
 
-  /* The four colours of the logo ring. */
-  --ring-green: oklch(0.64 0.14 160);
-  --ring-cyan: oklch(0.71 0.12 210);
-  --ring-amber: oklch(0.78 0.16 75);
-  --ring-violet: oklch(0.57 0.21 280);
+  /* The Mattress mark: a gold coin with a green ring. Same in light and dark. */
+  --mark-green: oklch(0.647 0.141 161);
+  --coin: oklch(0.854 0.15 89);
+  --coin-deep: oklch(0.56 0.12 78);
   --tint-green: oklch(0.93 0.05 160);
-  --tint-cyan: oklch(0.93 0.045 210);
-  --tint-amber: oklch(0.94 0.06 80);
-  --tint-violet: oklch(0.93 0.045 285);
-  --tint-coral: oklch(0.94 0.04 22);
+  --tint-gold: oklch(0.95 0.06 90);
+  /* Links on the gold tint need a deeper green to keep AA contrast. */
+  --link-on-gold: oklch(0.48 0.12 160);
 
   --band: oklch(0.34 0.07 165);
   --band-ink: oklch(0.97 0.02 160);
@@ -56,11 +54,10 @@
     --expense-soft: oklch(0.3 0.05 22);
     --transfer: oklch(0.7 0.015 250);
     --transfer-soft: oklch(0.28 0.012 250);
+    --coin-deep: oklch(0.84 0.14 88);
     --tint-green: oklch(0.25 0.04 160);
-    --tint-cyan: oklch(0.25 0.035 210);
-    --tint-amber: oklch(0.26 0.04 75);
-    --tint-violet: oklch(0.25 0.045 285);
-    --tint-coral: oklch(0.25 0.035 22);
+    --tint-gold: oklch(0.235 0.024 85);
+    --link-on-gold: var(--primary-deep);
     --band: oklch(0.27 0.06 165);
     --bezel: oklch(0.1 0.01 250);
     --shadow-float: 0 24px 60px oklch(0.05 0.01 250 / 0.6);
@@ -374,7 +371,7 @@ svg.i {
   min-height: 680px;
 }
 
-.ring {
+.coin {
   position: absolute;
   width: min(860px, 175%);
   aspect-ratio: 1;
@@ -384,10 +381,14 @@ svg.i {
   z-index: 0;
 }
 
-.ring circle {
+.coin-face {
+  fill: var(--coin);
+}
+
+.coin-ring {
   fill: none;
-  stroke-width: 14;
-  stroke-dasharray: var(--len) 360;
+  stroke: var(--mark-green);
+  stroke-width: 2.6;
 }
 
 .hero-visual .phone {
@@ -404,8 +405,8 @@ svg.i {
     overflow: hidden;
     margin-inline: calc(var(--gutter) * -1);
   }
-  .ring {
-    width: 130%;
+  .coin {
+    width: max(130%, 780px);
   }
 }
 
@@ -482,6 +483,10 @@ svg.i {
   background: color-mix(in oklch, var(--c) 16%, transparent);
   color: var(--c);
   font-size: 1.0625rem;
+}
+
+.points .glyph.gold {
+  background: color-mix(in oklch, var(--coin) 34%, transparent);
 }
 
 /* Phone frame and the app vocabulary inside it */
@@ -1011,7 +1016,7 @@ svg.i {
 .capture .band {
   padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 5vw, 4.5rem);
   border-radius: 32px;
-  background: var(--tint-amber);
+  background: var(--tint-gold);
 }
 
 .capture .copy {
@@ -1452,7 +1457,7 @@ svg.i {
   margin-top: clamp(2.5rem, 5vw, 4rem);
   padding: clamp(1rem, 3vw, 2rem);
   border-radius: 32px;
-  background: var(--tint-violet);
+  background: var(--tint-gold);
 }
 
 .board .surface {
@@ -1749,12 +1754,24 @@ svg.i {
   color: var(--band-ink);
 }
 
-.privacy .ring {
-  width: min(900px, 140vw);
-  left: auto;
-  right: -26%;
-  translate: 0 -50%;
-  opacity: 0.1;
+.privacy .mark {
+  position: absolute;
+  top: 50%;
+  right: -16%;
+  width: min(720px, 120vw);
+  translate: 0 -40%;
+  opacity: 0.08;
+}
+
+.mark-face {
+  fill: var(--coin);
+}
+
+.mark-cut {
+  fill: none;
+  stroke: var(--band);
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .privacy .wrap {
@@ -1799,7 +1816,7 @@ svg.i {
 }
 
 .facts h3 .i {
-  color: var(--ring-amber);
+  color: var(--coin);
 }
 
 .facts p {
@@ -1861,8 +1878,40 @@ svg.i {
   padding-block: clamp(3rem, 8vw, 7rem) clamp(3rem, 6vw, 5rem);
 }
 
+.closing .band {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 5vw, 4.5rem);
+  border-radius: 32px;
+  background: var(--tint-gold);
+}
+
+.closing .band > :not(.closing-coin) {
+  position: relative;
+}
+
 .closing .title {
-  max-width: 18ch;
+  max-width: 13ch;
+}
+
+.closing .lead a {
+  color: var(--link-on-gold);
+}
+
+.closing-coin {
+  position: absolute;
+  right: -3rem;
+  bottom: -4rem;
+  width: clamp(14rem, 30vw, 24rem);
+  rotate: -10deg;
+}
+
+@media (max-width: 44rem) {
+  .closing-coin {
+    right: -2rem;
+    bottom: -2.5rem;
+    width: 9.5rem;
+  }
 }
 
 .site-footer {
@@ -1913,14 +1962,28 @@ svg.i {
     translate: 0 0;
   }
 
-  .js .ring circle {
-    stroke-dasharray: 0 360;
-    transition: stroke-dasharray 1400ms var(--ease);
-    transition-delay: var(--d, 0ms);
+  .js .coin .coin-face {
+    opacity: 0;
+    scale: 0.86;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition:
+      opacity 900ms var(--ease),
+      scale 1400ms var(--ease);
   }
 
-  .js .ring.seen circle {
-    stroke-dasharray: var(--len) 360;
+  .js .coin .coin-ring {
+    stroke-dasharray: 0 360;
+    transition: stroke-dasharray 1600ms var(--ease) 350ms;
+  }
+
+  .js .coin.seen .coin-face {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .js .coin.seen .coin-ring {
+    stroke-dasharray: 360 360;
   }
 
   .js .donut circle {

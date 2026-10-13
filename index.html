@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Money Manager</title>
+    <title>Mattress: Private Money Manager</title>
     <meta
       name="description"
-      content="A money manager for privacy-minded power users. No server of ours, no analytics, no crash reporting, and it works with no network. Bring your own bank sync, AI and backup accounts."
+      content="Mattress: Private Money Manager for privacy-minded power users. No server of ours, no analytics, no crash reporting, and it works with no network. Bring your own bank sync, AI and backup accounts."
     />
-    <meta property="og:title" content="Money Manager" />
+    <meta property="og:title" content="Mattress: Private Money Manager" />
     <meta
       property="og:description"
       content="Your money, on your phone. Nowhere else."
     />
-    <meta property="og:image" content="icon.png" />
+    <meta property="og:image" content="https://getmattress.app/icon.png" />
     <meta
       name="theme-color"
       content="#f1f4f2"
@@ -24,7 +24,7 @@
       content="#0c1014"
       media="(prefers-color-scheme: dark)"
     />
-    <link rel="icon" href="icon.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -372,7 +372,7 @@
     </svg>
 
     <header class="wrap topbar">
-      <a class="brand" href="./"><img src="icon.png" alt="" />Money Manager</a>
+      <a class="brand" href="./"><img src="icon.png" alt="" />Mattress</a>
       <nav aria-label="Main">
         <a class="hide-sm" href="#features">Features</a>
         <a class="hide-sm" href="#security">Security</a>
@@ -420,44 +420,16 @@
         </div>
 
         <div class="hero-visual">
-          <svg class="ring" viewBox="0 0 100 100" aria-hidden="true">
-            <g transform="rotate(-90 50 50)">
-              <circle
-                cx="50"
-                cy="50"
-                r="28"
-                pathLength="360"
-                stroke="var(--ring-green)"
-                style="--len: 143.6"
-              />
-              <circle
-                cx="50"
-                cy="50"
-                r="28"
-                pathLength="360"
-                stroke="var(--ring-cyan)"
-                stroke-dashoffset="-153.8"
-                style="--len: 70.2; --d: 150ms"
-              />
-              <circle
-                cx="50"
-                cy="50"
-                r="28"
-                pathLength="360"
-                stroke="var(--ring-amber)"
-                stroke-dashoffset="-234.3"
-                style="--len: 57.4; --d: 300ms"
-              />
-              <circle
-                cx="50"
-                cy="50"
-                r="28"
-                pathLength="360"
-                stroke="var(--ring-violet)"
-                stroke-dashoffset="-301.9"
-                style="--len: 47.9; --d: 450ms"
-              />
-            </g>
+          <svg class="coin" viewBox="0 0 100 100" aria-hidden="true">
+            <circle class="coin-face" cx="50" cy="50" r="33" />
+            <circle
+              class="coin-ring"
+              cx="50"
+              cy="50"
+              r="27"
+              pathLength="360"
+              transform="rotate(-90 50 50)"
+            />
           </svg>
 
           <div
@@ -586,42 +558,13 @@
       </section>
 
       <section class="privacy" id="security">
-        <svg class="ring" viewBox="0 0 100 100" aria-hidden="true">
-          <g transform="rotate(-90 50 50)">
-            <circle
-              cx="50"
-              cy="50"
-              r="28"
-              pathLength="360"
-              stroke="var(--band-ink)"
-              style="--len: 143.6"
-            />
-            <circle
-              cx="50"
-              cy="50"
-              r="28"
-              pathLength="360"
-              stroke="var(--band-ink)"
-              stroke-dashoffset="-153.8"
-              style="--len: 70.2; --d: 150ms"
-            />
-            <circle
-              cx="50"
-              cy="50"
-              r="28"
-              pathLength="360"
-              stroke="var(--band-ink)"
-              stroke-dashoffset="-234.3"
-              style="--len: 57.4; --d: 300ms"
-            />
-            <circle
-              cx="50"
-              cy="50"
-              r="28"
-              pathLength="360"
-              stroke="var(--band-ink)"
-              stroke-dashoffset="-301.9"
-              style="--len: 47.9; --d: 450ms"
+        <svg class="mark" viewBox="17 17 66 66" aria-hidden="true">
+          <circle class="mark-face" cx="50" cy="50" r="33" />
+          <g class="mark-cut">
+            <circle cx="50" cy="50" r="27" stroke-width="2.6" />
+            <path
+              d="M36 62V47a7 7 0 0 1 14 0a7 7 0 0 1 14 0v15M50 47v15"
+              stroke-width="8.5"
             />
           </g>
         </svg>
@@ -715,7 +658,7 @@
           </p>
           <ul class="points">
             <li>
-              <span class="glyph" style="--c: var(--ring-green)"
+              <span class="glyph" style="--c: var(--primary)"
                 ><svg class="i"><use href="#i-smartphone" /></svg
               ></span>
               <span
@@ -725,7 +668,7 @@
               >
             </li>
             <li>
-              <span class="glyph" style="--c: var(--ring-violet)"
+              <span class="glyph gold" style="--c: var(--coin-deep)"
                 ><svg class="i"><use href="#i-list" /></svg
               ></span>
               <span
@@ -743,7 +686,7 @@
         >
           <div class="tile-qs" aria-hidden="true">
             <svg class="i"><use href="#i-plus" /></svg>
-            <span><b>Money Manager</b><small>Add record</small></span>
+            <span><b>Mattress</b><small>Add record</small></span>
           </div>
 
           <div
@@ -877,10 +820,10 @@
             >
             <h2 class="title">Card payments that write themselves.</h2>
             <p>
-              Pay and the payment lands in Money Manager. On Android it reads
-              the notification from the payment app you choose, like Google
-              Wallet. On iPhone, from iOS 27, a Shortcuts automation hands your
-              bank app&#8217;s notification to the &#8220;Add payment
+              Pay and the payment lands in Mattress. On Android it reads the
+              notification from the payment app you choose, like Google Wallet.
+              On iPhone, from iOS 27, a Shortcuts automation hands your bank
+              app&#8217;s notification to the &#8220;Add payment
               notification&#8221; action. The payment waits for its category,
               and one tap saves it. The notification is read on the phone and
               never sent anywhere.
@@ -905,7 +848,7 @@
               <svg class="i"><use href="#i-arrow-down" /></svg>
             </div>
             <div class="reveal" style="--d: 250ms">
-              <div class="step-label">Money Manager asks once</div>
+              <div class="step-label">Mattress asks once</div>
               <div class="paycard">
                 <div class="top">
                   <div>
@@ -1228,7 +1171,7 @@
           <div class="copy reveal">
             <ul class="points">
               <li>
-                <span class="glyph" style="--c: var(--ring-cyan)"
+                <span class="glyph" style="--c: var(--primary)"
                   ><svg class="i"><use href="#i-refresh-cw" /></svg
                 ></span>
                 <span
@@ -1239,7 +1182,7 @@
                 >
               </li>
               <li>
-                <span class="glyph" style="--c: var(--ring-green)"
+                <span class="glyph gold" style="--c: var(--coin-deep)"
                   ><svg class="i"><use href="#i-key-round" /></svg
                 ></span>
                 <span
@@ -1250,7 +1193,7 @@
                 >
               </li>
               <li>
-                <span class="glyph" style="--c: var(--ring-violet)"
+                <span class="glyph" style="--c: var(--primary)"
                   ><svg class="i"><use href="#i-trending-up" /></svg
                 ></span>
                 <span
@@ -1263,7 +1206,7 @@
                 >
               </li>
               <li>
-                <span class="glyph" style="--c: var(--ring-amber)"
+                <span class="glyph gold" style="--c: var(--coin-deep)"
                   ><svg class="i"><use href="#i-inbox" /></svg
                 ></span>
                 <span
@@ -1275,7 +1218,7 @@
             </ul>
           </div>
 
-          <div class="stage reveal" style="--stage: var(--tint-cyan)">
+          <div class="stage reveal" style="--stage: var(--tint-green)">
             <div
               class="phone"
               role="img"
@@ -1396,7 +1339,7 @@
           </p>
           <ul class="points">
             <li>
-              <span class="glyph" style="--c: var(--ring-cyan)"
+              <span class="glyph" style="--c: var(--primary)"
                 ><svg class="i"><use href="#i-eye" /></svg
               ></span>
               <span
@@ -1407,7 +1350,7 @@
               >
             </li>
             <li>
-              <span class="glyph" style="--c: var(--ring-violet)"
+              <span class="glyph gold" style="--c: var(--coin-deep)"
                 ><svg class="i"><use href="#i-check" /></svg
               ></span>
               <span
@@ -1417,7 +1360,7 @@
               >
             </li>
             <li>
-              <span class="glyph" style="--c: var(--ring-green)"
+              <span class="glyph" style="--c: var(--primary)"
                 ><svg class="i"><use href="#i-key-round" /></svg
               ></span>
               <span
@@ -1431,7 +1374,7 @@
 
         <div
           class="stage record-stage reveal"
-          style="--stage: var(--tint-amber)"
+          style="--stage: var(--tint-gold)"
         >
           <div
             class="phone"
@@ -1517,7 +1460,7 @@
           </p>
           <ul class="points">
             <li>
-              <span class="glyph" style="--c: var(--ring-green)"
+              <span class="glyph" style="--c: var(--primary)"
                 ><svg class="i"><use href="#i-check" /></svg
               ></span>
               <span
@@ -1528,7 +1471,7 @@
               >
             </li>
             <li>
-              <span class="glyph" style="--c: var(--ring-cyan)"
+              <span class="glyph gold" style="--c: var(--coin-deep)"
                 ><svg class="i"><use href="#i-eye" /></svg
               ></span>
               <span
@@ -1538,7 +1481,7 @@
               >
             </li>
             <li>
-              <span class="glyph" style="--c: var(--ring-violet)"
+              <span class="glyph" style="--c: var(--primary)"
                 ><svg class="i"><use href="#i-eye-off" /></svg
               ></span>
               <span
@@ -1773,7 +1716,7 @@
         </h2>
 
         <div class="pair">
-          <div class="reveal" style="--stage: var(--tint-violet)">
+          <div class="reveal" style="--stage: var(--tint-green)">
             <div
               class="surface"
               role="img"
@@ -1828,7 +1771,7 @@
                 </div>
               </div>
             </div>
-            <p class="pair-note" style="--c: var(--ring-violet)">
+            <p class="pair-note" style="--c: var(--primary)">
               <svg class="i"><use href="#i-refresh-cw" /></svg>
               <span
                 ><b>Prices fetched daily, gains worked out for you.</b> Any
@@ -1841,7 +1784,7 @@
 
           <div
             class="reveal debt"
-            style="--stage: var(--tint-amber); --d: 120ms"
+            style="--stage: var(--tint-gold); --d: 120ms"
           >
             <div
               class="surface"
@@ -1863,7 +1806,7 @@
               <div
                 class="bar"
                 aria-hidden="true"
-                style="--c: var(--ring-amber); --v: 0.417"
+                style="--c: var(--coin); --v: 0.417"
               >
                 <b></b>
               </div>
@@ -1902,7 +1845,7 @@
               <div
                 class="bar"
                 aria-hidden="true"
-                style="--c: var(--ring-cyan); --v: 0.427"
+                style="--c: var(--primary); --v: 0.427"
               >
                 <b></b>
               </div>
@@ -1921,7 +1864,7 @@
                 </div>
               </div>
             </div>
-            <p class="pair-note" style="--c: var(--ring-amber)">
+            <p class="pair-note" style="--c: var(--coin-deep)">
               <svg class="i"><use href="#i-hand-coins" /></svg>
               <span
                 ><b>Money you lent or borrowed has its own page.</b> Repayments
@@ -1944,7 +1887,7 @@
           </p>
           <ul class="points">
             <li>
-              <span class="glyph" style="--c: var(--ring-cyan)"
+              <span class="glyph" style="--c: var(--primary)"
                 ><svg class="i"><use href="#i-chart-pie" /></svg
               ></span>
               <span
@@ -1954,7 +1897,7 @@
               >
             </li>
             <li>
-              <span class="glyph" style="--c: var(--ring-amber)"
+              <span class="glyph gold" style="--c: var(--coin-deep)"
                 ><svg class="i"><use href="#i-bell" /></svg
               ></span>
               <span
@@ -1964,7 +1907,7 @@
               >
             </li>
             <li>
-              <span class="glyph" style="--c: var(--ring-violet)"
+              <span class="glyph" style="--c: var(--primary)"
                 ><svg class="i"><use href="#i-sparkles" /></svg
               ></span>
               <span
@@ -1975,7 +1918,7 @@
           </ul>
         </div>
 
-        <div class="stage reveal" style="--stage: var(--tint-coral)">
+        <div class="stage reveal" style="--stage: var(--tint-green)">
           <div
             class="surface"
             role="img"
@@ -2076,25 +2019,25 @@
           And the small things that make it yours.
         </h2>
         <ul class="detail-list">
-          <li class="reveal" style="--c: #22c55e">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-layers" /></svg
             ><b>Categories and subcategories</b
             ><span>Supermarket and Bakery roll up into Groceries.</span>
           </li>
-          <li class="reveal" style="--c: #ec4899">
+          <li class="reveal" style="--c: var(--coin-deep)">
             <svg class="i"><use href="#i-tag" /></svg><b>Labels</b
             ><span
               >Tags that cut across categories, like Holidays or Family.</span
             >
           </li>
-          <li class="reveal" style="--c: #f97316">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-palette" /></svg><b>Your colours</b
             ><span
               >Twelve colours for accounts, categories and labels, and an icon
               for each account and category.</span
             >
           </li>
-          <li class="reveal" style="--c: #3b82f6">
+          <li class="reveal" style="--c: var(--coin-deep)">
             <svg class="i"><use href="#i-funnel" /></svg
             ><b>Find it, fix it in bulk</b
             ><span
@@ -2103,18 +2046,18 @@
               once.</span
             >
           </li>
-          <li class="reveal" style="--c: #78716c">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-eye-off" /></svg><b>Hide amounts</b
             ><span
               >One switch turns every figure into dots, for checking in
               public.</span
             >
           </li>
-          <li class="reveal" style="--c: #6366f1">
+          <li class="reveal" style="--c: var(--coin-deep)">
             <svg class="i"><use href="#i-moon" /></svg><b>Light and dark</b
             ><span>Follows your phone, or pick one yourself.</span>
           </li>
-          <li class="reveal" style="--c: #ef4444">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-languages" /></svg
             ><b>English and Portuguese</b
             ><span
@@ -2122,19 +2065,19 @@
               pick a language in Settings.</span
             >
           </li>
-          <li class="reveal" style="--c: #14b8a6">
+          <li class="reveal" style="--c: var(--coin-deep)">
             <svg class="i"><use href="#i-arrow-up-down" /></svg
             ><b>Accounts in your order</b
             ><span>Every list and picker follows the order you set.</span>
           </li>
-          <li class="reveal" style="--c: #a855f7">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-globe" /></svg><b>Any currency</b
             ><span
               >Each account keeps its own currency, with nothing converted
               behind your back.</span
             >
           </li>
-          <li class="reveal" style="--c: #f59e0b">
+          <li class="reveal" style="--c: var(--coin-deep)">
             <svg class="i"><use href="#i-cloud" /></svg
             ><b>New phone, same money</b
             ><span
@@ -2142,7 +2085,7 @@
               screen.</span
             >
           </li>
-          <li class="reveal" style="--c: #3b82f6">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-folder-sync" /></svg
             ><b>Back up to a folder</b
             ><span
@@ -2151,7 +2094,7 @@
               keeps in sync.</span
             >
           </li>
-          <li class="reveal" style="--c: #ec4899">
+          <li class="reveal" style="--c: var(--coin-deep)">
             <svg class="i"><use href="#i-bell" /></svg><b>A nudge to back up</b
             ><span
               >After your first account, the app asks to turn on automatic
@@ -2159,7 +2102,7 @@
               a week behind.</span
             >
           </li>
-          <li class="reveal" style="--c: #f59e0b">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-hand-coins" /></svg
             ><b>Paid back, not income</b
             ><span
@@ -2167,14 +2110,14 @@
               share.</span
             >
           </li>
-          <li class="reveal" style="--c: #06b6d4">
+          <li class="reveal" style="--c: var(--coin-deep)">
             <svg class="i"><use href="#i-server" /></svg><b>Your own service</b
             ><span
               >Self-host the optional service for a read-only view in the
               browser and an MCP server your AI tools can read.</span
             >
           </li>
-          <li class="reveal" style="--c: #84cc16">
+          <li class="reveal" style="--c: var(--primary)">
             <svg class="i"><use href="#i-arrow-down" /></svg
             ><b>Bring your history</b
             ><span
@@ -2186,33 +2129,50 @@
       </section>
 
       <section class="wrap closing">
-        <h2 class="title reveal">
-          Coming soon to Google Play and the App Store.
-        </h2>
-        <p class="lead reveal" style="--d: 100ms">
-          Money Manager is in its final round of testing. Questions, or want to
-          know when it is out?
-          <a href="mailto:pjfseixas.17@gmail.com">pjfseixas.17@gmail.com</a>
-        </p>
-        <div class="stores reveal" style="--d: 150ms" aria-label="App stores">
-          <span class="store"
-            ><svg class="logo" aria-hidden="true">
-              <use href="#i-googleplay" /></svg
-            ><span><small>Coming soon to</small><b>Google Play</b></span></span
-          >
-          <span class="store"
-            ><svg class="logo" aria-hidden="true"><use href="#i-apple" /></svg
-            ><span><small>Coming soon to</small><b>App Store</b></span></span
-          >
+        <div class="band">
+          <svg class="closing-coin" viewBox="17 17 66 66" aria-hidden="true">
+            <circle cx="50" cy="50" r="33" fill="var(--coin)" />
+            <g
+              fill="none"
+              stroke="var(--mark-green)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="50" cy="50" r="27" stroke-width="2.6" />
+              <path
+                d="M36 62V47a7 7 0 0 1 14 0a7 7 0 0 1 14 0v15M50 47v15"
+                stroke-width="8.5"
+              />
+            </g>
+          </svg>
+          <h2 class="title reveal">Your money, under your own mattress.</h2>
+          <p class="lead reveal" style="--d: 100ms">
+            Mattress is in its final round of testing. Questions, or want to
+            know when it is out?
+            <a href="mailto:support@getmattress.app">support@getmattress.app</a>
+          </p>
+          <div class="stores reveal" style="--d: 150ms" aria-label="App stores">
+            <span class="store"
+              ><svg class="logo" aria-hidden="true">
+                <use href="#i-googleplay" /></svg
+              ><span
+                ><small>Coming soon to</small><b>Google Play</b></span
+              ></span
+            >
+            <span class="store"
+              ><svg class="logo" aria-hidden="true"><use href="#i-apple" /></svg
+              ><span><small>Coming soon to</small><b>App Store</b></span></span
+            >
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="wrap site-footer">
-      <a class="brand" href="./"><img src="icon.png" alt="" />Money Manager</a>
+      <a class="brand" href="./"><img src="icon.png" alt="" />Mattress</a>
       <nav aria-label="Footer">
         <a href="privacy.html">Privacy policy</a>
-        <a href="mailto:pjfseixas.17@gmail.com">Contact</a>
+        <a href="mailto:support@getmattress.app">Contact</a>
       </nav>
     </footer>
 
@@ -2228,7 +2188,7 @@
         { rootMargin: "0px 0px -10% 0px" },
       );
       document
-        .querySelectorAll(".reveal, .ring")
+        .querySelectorAll(".reveal, .coin")
         .forEach((el) => seen.observe(el));
     </script>
   </body>
