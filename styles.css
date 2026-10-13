@@ -109,7 +109,7 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
-/* Privacy policy */
+/* Privacy policy and terms of use */
 
 .policy {
   max-width: 44rem;
@@ -136,6 +136,9 @@ a {
 }
 
 .policy footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
   margin-top: 3rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--hairline);
@@ -1929,7 +1932,8 @@ svg.i {
 
 .site-footer nav {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
 }
 
 .site-footer a {
