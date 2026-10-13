@@ -19,7 +19,7 @@
       const suffix = query ? `?${query}` : "";
       const android = /Android/i.test(navigator.userAgent);
       const target = android
-        ? `intent://bank/callback${suffix}#Intent;scheme=mattress;package=com.pedroseixas.mattress;end`
+        ? `intent://bank/callback${suffix}#Intent;scheme=mattress;package=app.getmattress;end`
         : `mattress://bank/callback${suffix}`;
       const open = () => location.assign(target);
       document.getElementById("open").addEventListener("click", open);
