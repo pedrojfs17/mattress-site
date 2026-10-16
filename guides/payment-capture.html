@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Set up payment capture · Mattress</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="policy">
+      <a class="brand" href="../"><img src="../icon.png" alt="" />Mattress</a>
+
+      <h1>Set up payment capture</h1>
+      <p class="updated">
+        Pay with your phone and the payment lands in Mattress, waiting for its
+        category. Payment capture is part of Mattress Pro.
+      </p>
+
+      <h2>Before you start</h2>
+      <p>
+        Add at least one account in Mattress first. A captured payment needs an
+        account to go to. Capture reads payments in euros; add payments in other
+        currencies by hand. The notification is read on the phone and never sent
+        anywhere.
+      </p>
+
+      <h2>On Android</h2>
+      <p>
+        Open Settings with the gear at the top of Overview, then
+        <strong>Payment capture</strong>. The screen lists three steps and shows
+        a button on the next one.
+      </p>
+      <ol>
+        <li>
+          Tap <strong>Open notification access</strong> and turn it on for
+          Mattress. Come back to the app and the step is ticked.
+        </li>
+        <li>
+          Tap <strong>Allow notifications</strong>. Mattress uses its own
+          notification to ask for the category after each payment.
+        </li>
+        <li>
+          Tap <strong>Add an app</strong> and pick the app that tells you about
+          payments, usually Google Wallet. Mattress reads only the apps you add.
+        </li>
+        <li>
+          Turn on the switch at the top. It should say
+          <strong>Capturing from Google Wallet</strong>.
+        </li>
+      </ol>
+      <p>
+        Google Wallet is listed as soon as it is installed. Any other app shows
+        in the list only while it has a notification showing.
+      </p>
+
+      <h2>Choose where payments go</h2>
+      <p>Tap the app under <strong>Apps</strong> to set it up.</p>
+      <ul>
+        <li>
+          <strong>Default account</strong> is used when the notification names
+          no card.
+        </li>
+        <li>
+          <strong>Cards</strong> lists each card after its first payment. Pick
+          the account for each one, even if you have only one account: a
+          notification that names a card needs that card mapped. The card is
+          matched exactly as the notification shows it.
+        </li>
+      </ul>
+
+      <h2>Your first payment</h2>
+      <ol>
+        <li>
+          Pay with your phone. Mattress shows a notification with the merchant
+          and the amount.
+        </li>
+        <li>
+          Tap a category on the notification, or <strong>More</strong> to open
+          the payment and pick another one. The expense is already saved; this
+          only files it.
+        </li>
+        <li>
+          If something is missing, like a card with no account, the notification
+          says <strong>Payment needs you</strong>. Tap
+          <strong>Finish</strong> and fill in the gaps.
+        </li>
+        <li>
+          Back in <strong>Payment capture</strong>, open the payment under
+          <strong>Recent captures</strong> and check the merchant, the amount
+          and the account. If they are right, capture is working.
+        </li>
+      </ol>
+      <p>
+        A merchant you filed before goes to the same category on its own, and
+        the notification offers <strong>Change</strong> in case it is wrong.
+        Payments you have not finished wait in the review inbox. If the payment
+        app later changes the same notification to say the payment was declined
+        or refunded, Mattress removes the expense and tells you.
+      </p>
+
+      <h2>Apps other than Google Wallet</h2>
+      <p>
+        Google Wallet is read without any setup. For another app, such as your
+        bank's app, teach Mattress how its notifications look:
+      </p>
+      <ol>
+        <li>Pay once with that app so a payment notification arrives.</li>
+        <li>
+          In <strong>Payment capture</strong>, tap the app, then
+          <strong>Teach from a notification</strong>, and pick the payment
+          notification. Notifications from the last 7 days are listed.
+        </li>
+        <li>
+          Choose what you are marking, then tap its words: the merchant and the
+          amount, and the card if the notification shows one.
+        </li>
+        <li>
+          Check <strong>What it reads</strong>, then tap <strong>Save</strong>.
+          Capture must be on to save; if it is off, the screen offers
+          <strong>Switch on</strong>.
+        </li>
+      </ol>
+
+      <h2>If nothing arrives</h2>
+      <ul>
+        <li>
+          Under <strong>Apps</strong>, each app shows when its last notification
+          arrived and what happened to it. <strong>No notification yet</strong>
+          means Mattress has not seen one: check that notification access is
+          still on, and that the payment app itself shows notifications.
+        </li>
+        <li>
+          Some phones stop apps in the background to save battery. If captures
+          stop after a while, open the phone's settings for Mattress and set its
+          battery use to unrestricted.
+        </li>
+        <li>
+          <strong>Advanced</strong>, then
+          <strong>Keep a diagnostic view</strong>, shows what capture read from
+          each payment, never the notification text.
+        </li>
+      </ul>
+
+      <h2>On iPhone</h2>
+      <p>
+        iPhone does not let apps read other apps' notifications. From iOS 27, a
+        Shortcuts automation can pass your bank app's payment notification to
+        Mattress instead.
+      </p>
+      <ol>
+        <li>
+          In Mattress, open Settings, then <strong>Payment capture</strong>, and
+          tap <strong>Allow notifications</strong>.
+        </li>
+        <li>
+          Tap <strong>Show how</strong>, then <strong>Open Shortcuts</strong>.
+          In Shortcuts, go to <strong>Automation</strong> and tap
+          <strong>New</strong>.
+        </li>
+        <li>
+          Choose <strong>Notification</strong>, pick your bank's app and choose
+          <strong>Run Immediately</strong>.
+        </li>
+        <li>
+          Add the action <strong>Add payment notification</strong> from
+          Mattress. Set App to the bank's name, for example "Millennium", and
+          use the same name every time. Set Title to the notification's Title,
+          Subtitle to its Subtitle and Message to its Body.
+        </li>
+        <li>
+          Pay once with your card so a payment notification runs the automation.
+          Until it has run once, the switch in Mattress stays off.
+        </li>
+        <li>
+          Back in Mattress, tap <strong>Add an app</strong> and pick your bank.
+        </li>
+        <li>Turn on the switch at the top.</li>
+        <li>
+          Teach the template from that first payment notification, as described
+          above.
+        </li>
+      </ol>
+      <p>
+        Before iOS 27, or without the automation, add payments by hand or
+        connect your bank to sync them.
+      </p>
+
+      <footer>
+        <a href="../">Home</a>
+        <a href="./">All guides</a>
+        <a href="../privacy.html">Privacy policy</a>
+        <a href="../terms.html">Terms of use</a>
+        <a href="https://www.livroreclamacoes.pt/" lang="pt"
+          >Livro de Reclamações</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>
