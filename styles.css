@@ -179,6 +179,54 @@ a {
   color: var(--primary-deep);
 }
 
+/* App screenshots and clips in the guides, shown at phone size. */
+.shot {
+  margin: 1.5rem 0 2rem;
+}
+
+.shot img,
+.shot video {
+  display: block;
+  width: 15rem;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--hairline);
+  border-radius: 1.5rem;
+  background: var(--surface);
+  box-shadow: var(--shadow-surface);
+}
+
+.shot.wide img {
+  width: 24rem;
+  border-radius: 1rem;
+}
+
+.shot figcaption {
+  max-width: 24rem;
+  margin-top: 0.625rem;
+  color: var(--ink-muted);
+  font-size: 0.875rem;
+}
+
+/* Steps on the left, their screenshot on the right; stacked on phones. */
+@media (min-width: 40rem) {
+  .with-shot {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 14rem;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .with-shot > .shot {
+    margin: 1rem 0 0;
+  }
+
+  .with-shot > .shot img,
+  .with-shot > .shot video {
+    width: 100%;
+  }
+}
+
 /* Landing page */
 
 main {
