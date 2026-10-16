@@ -243,6 +243,13 @@ main {
   }
 }
 
+/* The store buttons already say it, so the smallest phones keep Guides. */
+@media (max-width: 23rem) {
+  .topbar .soon {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3 {
