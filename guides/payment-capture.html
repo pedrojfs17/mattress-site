@@ -37,24 +37,37 @@
         <strong>Payment capture</strong>. The screen lists three steps and shows
         a button on the next one.
       </p>
-      <ol>
-        <li>
-          Tap <strong>Open notification access</strong> and turn it on for
-          Mattress. Come back to the app and the step is ticked.
-        </li>
-        <li>
-          Tap <strong>Allow notifications</strong>. Mattress uses its own
-          notification to ask for the category after each payment.
-        </li>
-        <li>
-          Tap <strong>Add an app</strong> and pick the app that tells you about
-          payments, usually Google Wallet. Mattress reads only the apps you add.
-        </li>
-        <li>
-          Turn on the switch at the top. It should say
-          <strong>Capturing from Google Wallet</strong>.
-        </li>
-      </ol>
+      <div class="with-shot">
+        <ol>
+          <li>
+            Tap <strong>Open notification access</strong> and turn it on for
+            Mattress. Come back to the app and the step is ticked.
+          </li>
+          <li>
+            Tap <strong>Allow notifications</strong>. Mattress uses its own
+            notification to ask for the category after each payment.
+          </li>
+          <li>
+            Tap <strong>Add an app</strong> and pick the app that tells you
+            about payments, usually Google Wallet. Mattress reads only the apps
+            you add.
+          </li>
+          <li>
+            Turn on the switch at the top. It should say
+            <strong>Capturing from Google Wallet</strong>.
+          </li>
+        </ol>
+        <figure class="shot">
+          <img
+            src="img/capture-setup.webp"
+            width="480"
+            height="1040"
+            loading="lazy"
+            alt="The Payment capture screen with three numbered setup steps and an Open notification access button on the first one"
+          />
+          <figcaption>Before setup, the next step has its button.</figcaption>
+        </figure>
+      </div>
       <p>
         Google Wallet is listed as soon as it is installed. Any other app shows
         in the list only while it has a notification showing.
@@ -62,41 +75,83 @@
 
       <h2>Choose where payments go</h2>
       <p>Tap the app under <strong>Apps</strong> to set it up.</p>
-      <ul>
-        <li>
-          <strong>Default account</strong> is used when the notification names
-          no card.
-        </li>
-        <li>
-          <strong>Cards</strong> lists each card after its first payment. Pick
-          the account for each one, even if you have only one account: a
-          notification that names a card needs that card mapped. The card is
-          matched exactly as the notification shows it.
-        </li>
-      </ul>
+      <div class="with-shot">
+        <ul>
+          <li>
+            <strong>Default account</strong> is used when the notification names
+            no card.
+          </li>
+          <li>
+            <strong>Cards</strong> lists each card after its first payment. Pick
+            the account for each one, even if you have only one account: a
+            notification that names a card needs that card mapped. The card is
+            matched exactly as the notification shows it.
+          </li>
+        </ul>
+        <figure class="shot">
+          <img
+            src="img/capture-app.webp"
+            width="480"
+            height="1040"
+            loading="lazy"
+            alt="The settings of one app: Default account set to Main account, and the card Visa 4821 mapped to Main account"
+          />
+          <figcaption>
+            One app with a default account and its card mapped.
+          </figcaption>
+        </figure>
+      </div>
 
       <h2>Your first payment</h2>
-      <ol>
-        <li>
-          Pay with your phone. Mattress shows a notification with the merchant
-          and the amount.
-        </li>
-        <li>
-          Tap a category on the notification, or <strong>More</strong> to open
-          the payment and pick another one. The expense is already saved; this
-          only files it.
-        </li>
-        <li>
-          If something is missing, like a card with no account, the notification
-          says <strong>Payment needs you</strong>. Tap
-          <strong>Finish</strong> and fill in the gaps.
-        </li>
-        <li>
-          Back in <strong>Payment capture</strong>, open the payment under
-          <strong>Recent captures</strong> and check the merchant, the amount
-          and the account. If they are right, capture is working.
-        </li>
-      </ol>
+      <div class="with-shot">
+        <div>
+          <ol>
+            <li>
+              Pay with your phone. Mattress shows a notification with the
+              merchant and the amount.
+            </li>
+            <li>
+              Tap a category on the notification, or <strong>More</strong> to
+              open the payment and pick another one. The expense is already
+              saved; this only files it.
+            </li>
+            <li>
+              If something is missing, like a card with no account, the
+              notification says <strong>Payment needs you</strong>. Tap
+              <strong>Finish</strong> and fill in the gaps.
+            </li>
+            <li>
+              Back in <strong>Payment capture</strong>, open the payment under
+              <strong>Recent captures</strong> and check the merchant, the
+              amount and the account. If they are right, capture is working.
+            </li>
+          </ol>
+          <figure class="shot wide">
+            <img
+              src="img/capture-notification.webp"
+              width="664"
+              height="202"
+              loading="lazy"
+              alt="Mattress's notification: Mercado Verde, 23,15 euros, Pick a category, with the buttons Bar, cafe and More"
+            />
+            <figcaption>
+              The notification after a payment. One tap files it.
+            </figcaption>
+          </figure>
+        </div>
+        <figure class="shot">
+          <img
+            src="img/capture-finish.webp"
+            width="480"
+            height="1040"
+            loading="lazy"
+            alt="The Complete this payment screen asking which account the card Mastercard 1177 is, with Remember for this card turned on"
+          />
+          <figcaption>
+            After <strong>Finish</strong>: here a new card needs its account.
+          </figcaption>
+        </figure>
+      </div>
       <p>
         A merchant you filed before goes to the same category on its own, and
         the notification offers <strong>Change</strong> in case it is wrong.
@@ -110,23 +165,43 @@
         Google Wallet is read without any setup. For another app, such as your
         bank's app, teach Mattress how its notifications look:
       </p>
-      <ol>
-        <li>Pay once with that app so a payment notification arrives.</li>
-        <li>
-          In <strong>Payment capture</strong>, tap the app, then
-          <strong>Teach from a notification</strong>, and pick the payment
-          notification. Notifications from the last 7 days are listed.
-        </li>
-        <li>
-          Choose what you are marking, then tap its words: the merchant and the
-          amount, and the card if the notification shows one.
-        </li>
-        <li>
-          Check <strong>What it reads</strong>, then tap <strong>Save</strong>.
-          Capture must be on to save; if it is off, the screen offers
-          <strong>Switch on</strong>.
-        </li>
-      </ol>
+      <div class="with-shot">
+        <ol>
+          <li>Pay once with that app so a payment notification arrives.</li>
+          <li>
+            In <strong>Payment capture</strong>, tap the app, then
+            <strong>Teach from a notification</strong>, and pick the payment
+            notification. Notifications from the last 7 days are listed.
+          </li>
+          <li>
+            Choose what you are marking, then tap its words: the merchant and
+            the amount, and the card if the notification shows one.
+          </li>
+          <li>
+            Check <strong>What it reads</strong>, then tap
+            <strong>Save</strong>. Capture must be on to save; if it is off, the
+            screen offers <strong>Switch on</strong>.
+          </li>
+        </ol>
+        <figure class="shot">
+          <video
+            src="img/capture-teach.mp4"
+            poster="img/capture-teach.webp"
+            width="480"
+            height="1040"
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+            preload="metadata"
+            aria-label="Teaching a bank app: open the app, tap Teach from a notification, pick the payment, mark the merchant, the amount and the card, then Save"
+          ></video>
+          <figcaption>
+            Mark the merchant, the amount and the card, then Save.
+          </figcaption>
+        </figure>
+      </div>
 
       <h2>If nothing arrives</h2>
       <ul>
