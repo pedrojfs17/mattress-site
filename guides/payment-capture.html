@@ -229,39 +229,77 @@
         Shortcuts automation can pass your bank app's payment notification to
         Mattress instead.
       </p>
-      <ol>
-        <li>
-          In Mattress, open Settings, then <strong>Payment capture</strong>, and
-          tap <strong>Allow notifications</strong>.
-        </li>
-        <li>
-          Tap <strong>Show how</strong>, then <strong>Open Shortcuts</strong>.
-          In Shortcuts, go to <strong>Automation</strong> and tap
-          <strong>New</strong>.
-        </li>
-        <li>
-          Choose <strong>Notification</strong>, pick your bank's app and choose
-          <strong>Run Immediately</strong>.
-        </li>
-        <li>
-          Add the action <strong>Add payment notification</strong> from
-          Mattress. Set App to the bank's name, for example "Millennium", and
-          use the same name every time. Set Title to the notification's Title,
-          Subtitle to its Subtitle and Message to its Body.
-        </li>
-        <li>
-          Pay once with your card so a payment notification runs the automation.
-          Until it has run once, the switch in Mattress stays off.
-        </li>
-        <li>
-          Back in Mattress, tap <strong>Add an app</strong> and pick your bank.
-        </li>
-        <li>Turn on the switch at the top.</li>
-        <li>
-          Teach the template from that first payment notification, as described
-          above.
-        </li>
-      </ol>
+      <div class="with-shot">
+        <ol>
+          <li>
+            In Mattress, open Settings, then <strong>Payment capture</strong>,
+            and tap <strong>Allow notifications</strong>.
+          </li>
+          <li>
+            Tap <strong>Show how</strong>, then <strong>Open Shortcuts</strong>.
+            In Shortcuts, tap <strong>Library</strong>, then
+            <strong>Automation</strong>, then <strong>+</strong>.
+          </li>
+          <li>
+            Tap <strong>Edit</strong> at the top to see the actions. Open
+            <strong>Automation</strong> and pick <strong>Notification</strong>.
+          </li>
+          <li>
+            In "When I receive a notification from App", tap
+            <strong>App</strong> and pick your bank's app. Leave
+            <strong>Automation</strong> on.
+          </li>
+          <li>
+            Search for <strong>Add payment notification</strong> and pick the
+            one from Mattress. Set App to the bank's name, for example
+            "Millennium", and use the same name every time.
+          </li>
+          <li>
+            Tap Title, then <strong>Select Variable</strong>, and pick
+            <strong>Notification</strong>. Tap it again and choose
+            <strong>Title</strong>. Do the same for Subtitle with
+            <strong>Subtitle</strong>, and for Message with
+            <strong>Body</strong>. Go back to save it.
+          </li>
+        </ol>
+        <figure class="shot">
+          <img
+            src="img/capture-ios-automation.webp"
+            width="480"
+            height="1044"
+            loading="lazy"
+            alt="A Shortcuts automation: when I receive a notification from Demo Bank, with Automation on, runs Add payment notification with App set to Demo Bank and Title, Subtitle and Message set to the notification's Title, Subtitle and Body"
+          />
+          <figcaption>The automation, with a demo bank app.</figcaption>
+        </figure>
+      </div>
+      <div class="with-shot">
+        <ol start="7">
+          <li>
+            Pay once with your card so a payment notification runs the
+            automation. Until it has run once, the switch in Mattress stays off.
+          </li>
+          <li>
+            Back in Mattress, tap <strong>Add an app</strong> and pick your
+            bank.
+          </li>
+          <li>Turn on the switch at the top.</li>
+          <li>
+            Teach the template from that first payment notification, as
+            described above.
+          </li>
+        </ol>
+        <figure class="shot">
+          <img
+            src="img/capture-ios-add-app.webp"
+            width="480"
+            height="1044"
+            loading="lazy"
+            alt="Payment capture on iPhone after the first notification: the notifications and Shortcuts steps are ticked, and Add an app lists the bank app, with Or add by name below"
+          />
+          <figcaption>After the first payment, your bank is listed.</figcaption>
+        </figure>
+      </div>
       <p>
         Before iOS 27, or without the automation, add payments by hand or
         connect your bank to sync them.
