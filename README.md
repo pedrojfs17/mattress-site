@@ -9,7 +9,7 @@ The old `pedrojfs17.github.io/money-manager-app/` URLs forward there. This repos
 - `terms.html`: the terms of use.
 - `guides/`: how-to guides for the app, such as payment capture and the Enable Banking app. `guides/index.html`
   lists them.
-  `guides/img/` holds their app screenshots and clip, taken on an Android emulator with demo data.
+  `guides/img/` holds their app screenshots and clip, taken on the Android emulator and the iPhone simulator with demo data.
 - `bank-redirect/`: the Enable Banking redirect URL.
 - `banks/`: bank logos shown on the landing page, from Wikimedia Commons and Simple Icons. Each
   logo belongs to its bank.
