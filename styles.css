@@ -396,6 +396,19 @@ svg.i {
   cursor: default;
 }
 
+a.store {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.store:hover {
+  background: var(--primary-deep);
+}
+
+a.store:hover small {
+  opacity: 1;
+}
+
 .store span {
   display: flex;
   flex-direction: column;
