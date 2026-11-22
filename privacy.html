@@ -18,7 +18,7 @@
       <a class="brand" href="./"><img src="icon.png" alt="" />Mattress</a>
 
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated 28 October 2026</p>
+      <p class="updated">Last updated 22 November 2026</p>
 
       <h2>The short version</h2>
       <p>
@@ -28,16 +28,35 @@
         of your records.
       </p>
 
+      <h2>What the app collects, how and why</h2>
+      <p>
+        Mattress only handles what you put into it or connect to it: the
+        accounts, records, categories, notes and labels you type or import from
+        a file; the transactions, balances, trades and positions your bank and
+        broker connections bring in; payment notifications you choose to
+        capture; the questions and photos you give the assistant; and whether
+        you bought Mattress Pro, which the app checks with Apple or Google. It
+        uses them only to show and organise your money on your phone, to run the
+        features you turn on (categorising records, answering your questions,
+        syncing, reminders, backups), and for nothing else. None of it is sold,
+        used for advertising or tracking, or sent to the developer.
+      </p>
+
       <h2>What stays on your phone</h2>
       <p>
         Accounts, records, categories, rules, recurring payments, debts,
         investments and settings are stored in a local database on the device.
         Passphrases, bank keys, broker sessions and keys, AI keys and the
         ChatGPT sign-in are kept in the phone's secure storage, or encrypted on
-        the phone with a key kept there, and never go into a backup.
-        Uninstalling the app deletes its database. On iPhone, items in secure
-        storage can outlive an uninstall, so disconnect each service in the app
-        first if you want its keys removed.
+        the phone with a key kept there, and never go into a Mattress backup.
+        Deleting a record hides it but keeps a deletion marker with its contents
+        on the phone, so a bank sync cannot bring it back. Uninstalling the app
+        deletes its database. Like other apps, the app's data on the phone,
+        including captured payment notifications, can be part of your phone's
+        own backup (iCloud or a computer) if you have one turned on; keys and
+        sign-ins in secure storage can only be restored to the same phone. On
+        iPhone, items in secure storage can outlive an uninstall, so disconnect
+        each service in the app first if you want its keys removed.
       </p>
 
       <h2>Optional features that talk to other services</h2>
@@ -46,7 +65,12 @@
         with that service. Two need no account: backup to a folder, and
         investment prices, which are fetched as soon as a holding has a symbol.
         Data goes straight from your phone to the service, never through the
-        developer.
+        developer. Each service receives it under its own terms and privacy
+        policy, which give your data the same or equal protection as this
+        policy: they use it to provide what you asked for, keep their service
+        safe and meet the law, and do not sell it. Where a service may use it
+        for more, such as Yahoo Finance or a free Google key below, this policy
+        says so and it is your choice.
       </p>
       <ul>
         <li>
@@ -61,39 +85,54 @@
         </li>
         <li>
           <strong>Bank sync.</strong> Uses Enable Banking with credentials you
-          create. The app receives your bank accounts, balances and transactions
-          from Enable Banking and stores them on the phone.
+          create. The app sends Enable Banking the bank and country you pick,
+          the account and session identifiers it gave, and the dates of the
+          transactions to fetch, and receives your bank accounts, balances and
+          transactions, which it stores on the phone. After the bank login, your
+          browser opens a page on this website that passes the one-time login
+          code back to the app and sends it nowhere else. The website is hosted
+          on GitHub Pages, which receives that request and, like any web host,
+          logs visitors' IP addresses for security. If you turn on "Save raw
+          bank data", the replies of every bank and broker sync are kept on the
+          phone in one file that you can share yourself; it goes only where you
+          send it and into your phone's own backups.
         </li>
         <li>
           <strong>Broker connections.</strong> Trade Republic, Trading 212 and
           Robinhood connect directly from the phone. Your Trade Republic phone
-          number and PIN, your Trading 212 API key, and your Robinhood email and
-          password are sent only to that broker. The PIN and password are never
-          saved. The Trading 212 key and the broker sessions stay on the phone,
-          in secure storage or encrypted with a key kept there. The app receives
-          your cash movements, trades and positions and stores them on the
-          phone.
+          number and PIN, your Trading 212 API key and secret, and your
+          Robinhood email and password are sent only to that broker, with an
+          identifier the app makes for this phone and its time zone (Trade
+          Republic) or a device token (Robinhood), and any one-time code their
+          login asks for. The PIN and password are never saved. The Trading 212
+          key and the broker sessions stay on the phone, in secure storage or
+          encrypted with a key kept there. The app receives your cash movements,
+          trades and positions and stores them on the phone.
         </li>
         <li>
           <strong>ChatGPT sign-in.</strong> You sign in on OpenAI's own page.
-          The app keeps the sign-in and your account email in the phone's secure
-          storage, and uses your ChatGPT plan for AI requests instead of an API
-          key.
+          Signing in sends OpenAI the sign-in request, an identifier for this
+          installation and, when you sign in again, your email; none of your
+          records. The app keeps the sign-in and your account email in the
+          phone's secure storage, and uses your ChatGPT plan for AI requests
+          instead of an API key.
         </li>
         <li>
           <strong>AI categorisation.</strong> Sends the merchant name, whether
-          the money came in or went out, and your category names to the AI
-          provider you choose: your ChatGPT plan, or Anthropic, OpenAI or Google
-          with your own API key. Amounts, dates, accounts and notes are never
-          sent.
+          the money came in or went out, and your category names and types (and
+          whether each counts in reports), with random IDs to match the answers,
+          to the AI provider you choose: OpenAI through your ChatGPT plan, or
+          Anthropic, OpenAI or Google with your own API key. Amounts, dates,
+          accounts, notes and labels are never sent. Nothing is sent until you
+          allow that provider, see "AI services" below.
         </li>
         <li>
           <strong>Assistant.</strong> Runs on your ChatGPT plan. When you use
-          it, your questions and what it needs from your records to answer,
-          including merchants, amounts, dates, categories, accounts and notes,
-          are sent to OpenAI. A notice says so before your first question. The
-          app asks OpenAI not to store the chat, and the chat is not saved on
-          the phone.
+          it, your questions, any photos you attach, and what it needs from your
+          records to answer, including merchants, amounts, dates, categories,
+          accounts, notes, holdings and debts, are sent to OpenAI. Nothing is
+          sent until you allow it, see "AI services" below. The app asks OpenAI
+          not to store the chat, and the chat is not saved on the phone.
         </li>
         <li>
           <strong>Computer access.</strong> Lets an AI app on your computer,
@@ -113,14 +152,86 @@
           investments to Yahoo Finance to fetch prices, with the dates of the
           price history needed, which start at your first trade. Searching for a
           symbol or syncing a broker portfolio sends the text or ISIN being
-          looked up. Nothing else is sent.
+          looked up. Nothing else is sent. Yahoo receives these requests under
+          its own privacy policy and may use the request's IP address, for
+          example for advertising.
         </li>
         <li>
           <strong>Payment capture.</strong> On Android, reads notifications from
           the payment app you pick. On iPhone, from iOS 27, a Shortcuts
           automation you set up passes your bank app's notification to the app.
           Both happen on the phone, to create records, and the notifications are
-          not sent anywhere.
+          not sent anywhere. If you allow the assistant, it can read a captured
+          payment waiting for review (app, merchant, amount, currency and date)
+          to answer you, and that goes to OpenAI like the rest of what it reads.
+          If you allow Computer access, the AI app on your computer can read it
+          too.
+        </li>
+      </ul>
+
+      <h2>AI services</h2>
+      <p>
+        Before the app sends any of your records, questions or photos to an AI
+        service for the first time, it asks your permission. It names who
+        receives the data (OpenAI, Anthropic or Google, or for Computer access
+        the AI app on your computer), says what is sent and when, and offers
+        "Allow" or "Not now". If you choose "Not now", nothing is sent and that
+        feature stays off; the rest of the app works as before. AI
+        categorisation asks once for each provider, and the assistant and
+        Computer access ask once each. After that, data is sent when you ask,
+        and, if you turn on Automatic, AI categorisation also sends records
+        without a category by itself while the app is open, including ones
+        already on your phone. You can change any of these choices at any time
+        in More &gt; Display and privacy. Turning one off stops future requests;
+        to delete what a company already received, use that company's own
+        controls or contact it. The choice is kept on the phone only, so a new
+        phone asks again.
+      </p>
+      <p>
+        For AI categorisation and the assistant, the data is sent straight from
+        your phone to that company, over an encrypted connection, only to get
+        the answer you asked for: category suggestions, or a reply from the
+        assistant. Computer access works differently, see below. It is not sent
+        to the developer. Like every service above, each company gives it the
+        same or equal protection as this policy. Whether a company may also use
+        it to improve its models depends on choices you make with it: your
+        ChatGPT data controls, or a free Google key, below.
+      </p>
+      <ul>
+        <li>
+          <strong>OpenAI, through your ChatGPT plan.</strong> Covered by your
+          ChatGPT account's terms and data controls, including whether your
+          chats may be used to improve OpenAI's models. The app asks OpenAI not
+          to store the request.
+          <a href="https://openai.com/policies/privacy-policy/"
+            >OpenAI privacy policy</a
+          >.
+        </li>
+        <li>
+          <strong>Anthropic, OpenAI or Google with your own API key.</strong>
+          Covered by that company's API terms. Anthropic and OpenAI do not use
+          API data to train their models unless you agree to it. Google does not
+          for paid Gemini API keys, or for any key in the European Economic
+          Area, Switzerland or the UK; elsewhere, with a free key, Google may
+          use what is sent to improve its products and people may read it, and
+          Google asks not to send personal information that way, so use a paid
+          key.
+          <a href="https://www.anthropic.com/legal/privacy"
+            >Anthropic privacy policy</a
+          >,
+          <a href="https://openai.com/policies/privacy-policy/"
+            >OpenAI privacy policy</a
+          >,
+          <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.
+        </li>
+        <li>
+          <strong>Computer access.</strong> The AI app you connect on your
+          computer sends what it reads to its own AI service, under that
+          service's terms. The phone serves it to that computer over plain HTTP
+          on your Wi-Fi, not through the internet, and the computer's app makes
+          its own connection to its AI service. The Computer access screen asks
+          your permission before it starts, and only a computer with the code
+          shown there can connect.
         </li>
       </ul>
 
@@ -167,7 +278,7 @@
       </p>
       <p>
         The folder backup passphrase is kept in the phone's secure storage and
-        never goes into a backup. Turning folder backup off forgets the
+        never goes into a Mattress backup. Turning folder backup off forgets the
         passphrase and the folder. Backups already in the folder stay there
         until you delete them.
       </p>
